@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Summary - Paradigm Pet Professionals</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mt-5 text-white">
+        <h1>Your Submitted Information</h1>
+        <div class="summary-content">
+            <h2>Vacation Details</h2>
+            <p><strong>Departure City:</strong> <span id="departureCity"></span></p>
+            <p><strong>Departure Date:</strong> <span id="departureDate"></span></p>
+            <p><strong>Number of Nights:</strong> <span id="numNights"></span></p>
+            <p><strong>Number of Travelers:</strong> <span id="numPeople"></span></p>
+            <p><strong>Accommodation Type:</strong> <span id="accommodation"></span></p>
+            <p><strong>Selected Activities:</strong> <span id="activities"></span></p>
+            <p><strong>Average Budget:</strong> <span id="budget"></span></p>
+
+            <h2>User Information</h2>
+            <p><strong>First Name:</strong> <span id="firstName"></span></p>
+            <p><strong>Last Name:</strong> <span id="lastName"></span></p>
+            <p><strong>Phone Number:</strong> <span id="phoneNumber"></span></p>
+            <p><strong>Email:</strong> <span id="email"></span></p>
+            <p><strong>Time Zone:</strong> <span id="timeZone"></span></p>
+
+            <h2>Comment</h2>
+            <p><strong>Your Comment:</strong> <span id="comment"></span></p>
+        </div>
+
+        <div class="mt-4">
+            <a href="index.html" class="btn btn-primary">Go Back to Home</a>
+        </div>
+    </div>
+
+    <script>
+        // Function to retrieve data from localStorage and display it
+        document.addEventListener("DOMContentLoaded", function() {
+            // Get data from localStorage
+            const departureCity = localStorage.getItem("departureCity");
+            const departureDate = localStorage.getItem("departureDate");
+            const numNights = localStorage.getItem("numNights");
+            const numPeople = localStorage.getItem("numPeople");
+            const accommodation = localStorage.getItem("accommodation");
+            const activities = localStorage.getItem("activities");
+            const budget = localStorage.getItem("budget");
+
+            const firstName = localStorage.getItem("firstName");
+            const lastName = localStorage.getItem("lastName");
+            const phoneNumber = localStorage.getItem("phoneNumber");
+            const email = localStorage.getItem("email");
+            const timeZone = localStorage.getItem("timeZone");
+            const comment = localStorage.getItem("comment");
+
+            // Populate the fields with the data
+            document.getElementById("departureCity").textContent = departureCity;
+            document.getElementById("departureDate").textContent = departureDate;
+            document.getElementById("numNights").textContent = numNights;
+            document.getElementById("numPeople").textContent = numPeople;
+            document.getElementById("accommodation").textContent = accommodation;
+            document.getElementById("activities").textContent = activities;
+            document.getElementById("budget").textContent = budget;
+
+            document.getElementById("firstName").textContent = firstName;
+            document.getElementById("lastName").textContent = lastName;
+            document.getElementById("phoneNumber").textContent = phoneNumber;
+            document.getElementById("email").textContent = email;
+            document.getElementById("timeZone").textContent = timeZone;
+            document.getElementById("comment").textContent = comment;
+        });
+    </script>
+</body>
+</html>

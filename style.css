@@ -243,6 +243,14 @@ p a {
 .userFormContent{
 	display: flex;
 	flex-direction: column;
+	background-color: #003B6D;
+	color: white;
+	padding: 1vw;
+}
+
+.dreamFormContent{
+	display: flex;
+	flex-direction: column;
 	background-color: #6699CC;
 	color: white;
 	padding: 1vw;
@@ -421,4 +429,10 @@ h1{
 .checkbox-group {
 	display: flex; /* Display all checkboxes on the same row */
 	gap: 20px; /* Space between each checkbox group */
+}
+
+/* Red asterisk styling */
+.form-label.required::after {
+	content: " *";
+	color: red;
 }
