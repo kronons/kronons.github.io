@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Taniti Travels</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="A place with advice from pet professionals.">
+		<meta name="keywords" content="pet, cat, dog, bird, fish">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css">
+	</head>
+	<body>
+		<div class="headTopContainer">
+			<header>
+				<div>
+					<img src="logo.png" alt="Paradigm Pet Professionals Logo" class="logo"/>
+				</div>
+				<div>
+					<nav>
+						<ul class="navContainer">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="amen.html">Amenities</a></li>
+							<li><a href="faqs.html">FRIs</a></li>
+							<li><a href="aboutus.html">About Us</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="search">
+					<a href="contact.html" class="contact">Contact Us</a>
+				</div>	
+			</header>
+		</div>
+		
+		<section>
+			<!-- Slideshow container -->
+			<div class="slideshow-container">
+
+			  <!-- Full-width images with number and caption text -->
+			  <div class="mySlides fade">
+				<div class="numbertext">1 / 4</div>
+				<img src="amen.jpg" style="width:100%">
+				<div class="text" style="color:black;">Beach</div>
+			  </div>
+
+			  <div class="mySlides fade">
+				<div class="numbertext">2 / 4</div>
+				<img src="beach.jpg" style="width:100%">
+				<div class="text">Beach 2</div>
+			  </div>
+
+			  <div class="mySlides fade">
+				<div class="numbertext">3 / 4</div>
+				<img src="lodging.jpeg" style="width:100%">
+				<div class="text">Lodging</div>
+			  </div>
+			  
+			  <div class="mySlides fade">
+				<div class="numbertext">4 / 4</div>
+				<img src="sight.jpg" style="width:100%">
+				<div class="text">Sight Seeing</div>
+			  </div>
+
+			  <!-- Next and previous buttons -->
+			  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+			<br>
+
+			<!-- The dots/circles -->
+			<div style="text-align:center">
+			  <span class="dot" onclick="currentSlide(1)"></span>
+			  <span class="dot" onclick="currentSlide(2)"></span>
+			  <span class="dot" onclick="currentSlide(3)"></span>
+			  <span class="dot" onclick="currentSlide(4)"></span>
+			</div> 
+		</section>
+		
+		<section class="animals">
+					<h1 class="animalTitle">Amenities</h1>
+					<div class="container">
+						<div class="item">
+							<h2>Resturants</h2>
+							<p>Taniti currently has 10 restaurants: five serve mostly local fish and rice, three serve American-style meals, and two serve Pan-Asian cuisine.</p>
+						</div>
+						<div class="item">
+							<div class="item">
+								<h2>Entertainment</h2>
+								<p>Most people visit Taniti to enjoy the beaches, explore the rainforest, and to visit the volcano. However, there are other things to do, including visiting a local history museum, going on chartered fishing tours, snorkeling, zip-lining in the rainforest, visiting several pubs, including a microbrewery, dancing at a new dance club, seeing a movie, taking helicopter rides, playing at an arcade, visiting art galleries, and bowling. Also, a nine-hole golf course should be operational by next year. Many of these activities are located in Merriton Landing, which is a rapidly developing area on the north side of Yellow Leaf Bay. </p>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item">
+								<h2>Grocery Stores</h2>
+								<p>Taniti has two supermarkets, two smaller grocery stores, and one convenience store that is open 24 hours a day. </p>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item">
+								<h2>Sightseeing</h2>
+								<p>Most tourists spend most of their time in Taniti City, which boasts native architecture and nearby white, sandy beaches that encircle Yellow Leaf Bay. Other popular activities include boat or bus tours of the island, hikes in the rainforest, or visits to Taniti’s active volcano.</p>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item">
+								<h2>Lodging</h2>
+								<p>Taniti has a wide variety of lodging that ranges from an inexpensive hostel to one large, four-star resort. There are many small, family-owned hotels and a growing number of bed and breakfasts. All types of lodging are strictly regulated and regularly inspected by the Tanitian government.</p>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item">
+								<h2>Transportation</h2>
+								<p>Almost all visitors arrive to Taniti by air, though some arrive on a small cruise ship that docks in Yellow Leaf Bay for one night per week. Taniti is served by a small airport that can accommodate small jets and propeller planes. Taniti is in the process of expanding the airport so larger jets will be able to land on the island within the next few years. </p>
+								<h2>Ground Transportation</h2>
+								<p>Public buses serve Taniti City and run from 5 a.m. to 11 p.m. every day. Private buses serve the rest of the island. Taxis are available in Taniti City, and rental cars can be rented from a local rental agency near the airport. Bikes and helmets are available to rent from several vendors (helmets are required by law). Taniti City is fairly flat and very walkable. Many tourists stay in the area surrounding Merriton Landing: this area is easy to explore on foot.</p>
+							</div>
+						</div>
+					</div>
+		</section>
+		
+		<section>
+			<div class="contentContainer">
+				<div>
+					<img src="people.jpg" alt="Photo of chip the dog" class="contentPhotoBottom"/>
+				</div>
+				<div>
+					<h1>Why choose us?</h1>
+					<p class="contentTextBottom">
+						We offer exceptional customer service, a wide range of activities, , stunning landscapes, and countless opportunities for exploration.
+					</p>
+				</div>
+			</div>
+		</section>
+		
+		<script>
+			let slideIndex = 1;
+			showSlides(slideIndex);
+
+			// Next/previous controls
+			function plusSlides(n) {
+			  showSlides(slideIndex += n);
+			}
+
+			// Thumbnail image controls
+			function currentSlide(n) {
+			  showSlides(slideIndex = n);
+			}
+
+			function showSlides(n) {
+			  let i;
+			  let slides = document.getElementsByClassName("mySlides");
+			  let dots = document.getElementsByClassName("dot");
+			  if (n > slides.length) {slideIndex = 1}
+			  if (n < 1) {slideIndex = slides.length}
+			  for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";
+			  }
+			  for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			  }
+			  slides[slideIndex-1].style.display = "block";
+			  dots[slideIndex-1].className += " active";
+			} 
+		</script>
+		
+		<footer>
+			<div class="footerContainer">
+				<div class="social-icons">
+					<a href="https://facebook.com" target="_blank">
+						<i class="bi bi-facebook"></i>
+					</a>
+					<a href="https://twitter.com" target="_blank">
+						<i class="bi bi-twitter"></i>
+					</a>
+					<a href="https://instagram.com" target="_blank">
+						<i class="bi bi-instagram"></i>
+					</a>
+					<a href="https://linkedin.com" target="_blank">
+						<i class="bi bi-linkedin"></i>
+					</a>
+				</div>
+				<div>
+					<nav>
+						<ul class="bottomNav">
+							<li><a href="aboutus.html">About Us</a></li>
+							<li><a href="faqs.html">FRIs</a></li>
+							<li><a href="contactus">Contact Us</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Taniti Travels</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="A place with advice from pet professionals.">
+		<meta name="keywords" content="pet, cat, dog, bird, fish">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css">
+	</head>
+	<body>
+		<div class="headTopContainer">
+			<header>
+				<div>
+					<img src="logo.png" alt="Paradigm Pet Professionals Logo" class="logo"/>
+				</div>
+				<div>
+					<nav>
+						<ul class="navContainer">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="amen.html">Amenities</a></li>
+							<li><a href="faqs.html">FRIs</a></li>
+							<li><a href="aboutus.html">About Us</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="search">
+					<a href="contact.html" class="contact">Contact Us</a>
+				</div>	
+			</header>
+		</div>
+		
+		<section class="animals">
+					<h1 class="FRIs">Frequently Requested Information</h1>
+					<ul class="fri">
+						<p>Power outlets are 120 volts (the same as in the United States). </p>
+						<p>Alcohol is not allowed to be served or sold between the hours of midnight and 9:00 a.m. </p>
+						<p>The drinking age on Taniti is 18 and the drinking age is not strictly enforced.</p>
+						<p>Many younger Tanitians speak fluent English. Very little English is spoken in rural areas, especially by the older residents.</p>
+						<p>There is one hospital and several clinics. The hospital has many multilingual employees.</p>
+						<p>Violent crime is very rare on Taniti, but as tourism increases, there are more reports of pickpocketing and other petty crimes. </p>
+						<p>Taniti enjoys a large number of national holidays, and many tourist attractions and restaurants will be closed on holidays, so visitors should plan accordingly.</p>
+						<p>Taniti uses the U.S. dollar as its currency, but many businesses will also accept euros and yen. Several banks facilitate currency exchange, and many businesses accept major credit cards.</p>
+					</ul>
+
+		</section>
+		
+		<script>
+			let slideIndex = 1;
+			showSlides(slideIndex);
+
+			// Next/previous controls
+			function plusSlides(n) {
+			  showSlides(slideIndex += n);
+			}
+
+			// Thumbnail image controls
+			function currentSlide(n) {
+			  showSlides(slideIndex = n);
+			}
+
+			function showSlides(n) {
+			  let i;
+			  let slides = document.getElementsByClassName("mySlides");
+			  let dots = document.getElementsByClassName("dot");
+			  if (n > slides.length) {slideIndex = 1}
+			  if (n < 1) {slideIndex = slides.length}
+			  for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";
+			  }
+			  for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			  }
+			  slides[slideIndex-1].style.display = "block";
+			  dots[slideIndex-1].className += " active";
+			} 
+		</script>
+		
+		<footer>
+			<div class="footerContainer">
+				<div class="social-icons">
+					<a href="https://facebook.com" target="_blank">
+						<i class="bi bi-facebook"></i>
+					</a>
+					<a href="https://twitter.com" target="_blank">
+						<i class="bi bi-twitter"></i>
+					</a>
+					<a href="https://instagram.com" target="_blank">
+						<i class="bi bi-instagram"></i>
+					</a>
+					<a href="https://linkedin.com" target="_blank">
+						<i class="bi bi-linkedin"></i>
+					</a>
+				</div>
+				<div>
+					<nav>
+						<ul class="bottomNav">
+							<li><a href="aboutus.html">About Us</a></li>
+							<li><a href="faq.html">FRIs</a></li>
+							<li><a href="contactus">Contact Us</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
